@@ -44,7 +44,7 @@ if ($user) {
 
 // Login or logout url will be needed depending on current user state.
 if ($user) {
-  $logoutUrl = $facebook->getLogoutUrl(array('next' => 'http://localhost/facebook_login/examples/logout.php'));
+  $logoutUrl = $facebook->getLogoutUrl(array('next' => 'http://www.fitied.com/facebook-php-sdk/examples/logout.php'));
 } else {
   $loginUrl = $facebook->getLoginUrl();
 }
@@ -107,7 +107,7 @@ $naitik = $facebook->api('/naitik');
     ?>
 
 
-      
+
     <?php else: ?>
       <strong><em>You are not Connected.</em></strong>
     <?php endif ?>
